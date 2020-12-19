@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Donation</title>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <style>
+    /*topnav*/
+
+.nav-link.text-dark:hover {
+    color: #999 !important;
+}
+
+.custom-badge {
+    position: relative;
+    top: -7px;
+    right: -13px;
+    font-size: .7em;
+}
+.container-nav {
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (max-width: 767.98px) { 
+    .container-nav {
+        max-width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .topheader {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+
+
+/*background color*/
+  body {
+  background-color:#4B515D ;
+}  
+  section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    /*footer*/
+}
+#footer {
+    background: black !important;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+.p copy{
+   color: white; 
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+h1 { color: #ff4411; 
+     font-size: 48px; 
+     font-family: 'Signika', sans-serif; 
+     padding-bottom: 10px; 
+}
+p{
+    font-size: 20px;
+}
+
+.modal  {
+    /*   display: block;*/
+    padding-right: 0px;
+    background-color: rgba(4, 4, 4, 0.8); 
+    }
+   
+    .modal-dialog {
+            top: 20%;
+                width: 100%;
+    position: absolute;
+        }
+        .modal-content {
+                border-radius: 0px;
+                border: none;
+    top: 40%;
+            }
+            .modal-body {
+                    background-color: #0f8845;
+    color: white;
+                }
+      
+                /*content text*/
+
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+h1 { 
+	font: bold 300% Consolas, Monaco, monospace;
+	border-right: .1em solid black;
+	width: 16.5em; 
+	width: 21ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: typing 2s steps(21, end),
+	           blink-caret .5s step-end infinite alternate;
+        
+}
+h1 {
+    font-size: 40px;
+    line-height: 38px;
+    
+}
+
+
+
+
+
+               
+  </style>
+</head>
+
+<body>
+    
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<a class="navbar-brand" href="home.html"> <img class="logo" src="picdeo.png" height="40"> Picdeo Course </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbar1">
+    <ul class="navbar-nav ml-auto"> 
+
+<li class="nav-item"><a class="nav-link" href="donation.html"><img src="heart-2x.png"> Donate </a></li>
+
+<li class="nav-item"><a class="nav-link" href="Login.html"> <img src="person-2x.png"> User ID </a></li>
+<li class="nav-item">
+         <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form></li>
+    </ul>
+  </div>
+</nav>
+
+    
+     <div class="bottom bg-light sticky-top shadow-sm">
+        <div class="container-nav">
+            <ul class="nav nav-bottom nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link bg-primary text-white" terget="_blank" href="About.html"> <img src="people-2x.png">  <span class="d-none d-sm-inline-block d-md-inline-block">Department</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-primary text-white" terget="_blank" href="student.html#project"> <img src="puzzle-piece-2x.png"><span class="d-none d-sm-inline-block d-md-inline-block">Project</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-primary text-white" href="About.html#service"><img src="graph-2x.png"> <span class="d-none d-sm-inline-block d-md-inline-block">Services</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-primary text-white" href="thanks.html">  <span class="badge badge-danger badge-pill custom-badge">20</span> <img src="cloudy-2x.png"> <span class="d-none d-sm-inline-block d-md-inline-block">Notification</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-primary text-white" href="login.html"><img src="wrench-2x.png"> <span class="d-none d-sm-inline-block d-md-inline-block">Setting</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </div> 
+    
+    <div class="container">
+        <h1><strong><center>Your Payment Gateway!</center></strong></h1>
+        <center><p>As online banking has gained in popularity, fees for sending money to external accounts have become less common.Many popular banking institutions offered the service for free. <u>Here’s a 3 small sampling of those transfer:</u></p></center>
+    </div>
+  
+    <div class="container">
+<br>  
+<hr>
+
+<div class="row">
+   
+	
+	<aside class="col-sm-6">
+            </aside>
+
+<article class="card">
+<div class="card-body p-5">
+
+<ul class="nav bg-light nav-pills rounded nav-fill mb-3" role="tablist">
+	<li class="nav-item">
+		<a class="nav-link active" data-toggle="pill" href="#nav-tab-card">
+		<i class="fa fa-credit-card"></i> Credit Card</a></li>
+	<li class="nav-item">
+		<a class="nav-link" data-toggle="pill" href="#nav-tab-paypal">
+		<i class="fab fa-card"></i>  Paypal</a></li>
+	<li class="nav-item">
+		<a class="nav-link" data-toggle="pill" href="#nav-tab-bank">
+		<i class="fa fa-university"></i>  Bank Transfer</a></li>
+</ul>
+
+<div class="tab-content">
+<div class="tab-pane fade show active" id="nav-tab-card">
+	<p class="alert alert-success">Successful transaction ! </p>
+	<form role="form">
+	<div class="form-group">
+		<label for="username">Full name (on the card)</label>
+		<input type="text" class="form-control" name="username" placeholder="" required="">
+	</div> <!-- form-group.// -->
+
+	<div class="form-group">
+		<label for="cardNumber">Card number</label>
+		<div class="input-group">
+			<input type="text" class="form-control" name="cardNumber" placeholder="">
+			<div class="input-group-append">
+				<span class="input-group-text text-muted">
+					<i class="fab fa-cc-visa"></i>   <i class="fab fa-cc-amex"></i>   
+					<i class="fab fa-cc-mastercard"></i> 
+				</span>
+			</div>
+		</div>
+	</div> <!-- form-group.// -->
+
+	<div class="row">
+	    <div class="col-sm-8">
+	        <div class="form-group">
+	            <label><span class="hidden-xs">Expiration</span> </label>
+	        	<div class="input-group">
+	        		<input type="number" class="form-control" placeholder="MM" name="">
+		            <input type="number" class="form-control" placeholder="YY" name="">
+	        	</div>
+	        </div>
+	    </div>
+	    <div class="col-sm-4">
+	        <div class="form-group">
+	            <label data-toggle="tooltip" title="" data-original-title="3 digits code on back side of the card">CVV <i class="fa fa-question-circle"></i></label>
+	            <input type="number" class="form-control" required="">
+	        </div> <!-- form-group.// -->
+	    </div>
+	</div>
+        <!-- row.// -->
+        <div class="container">
+         <div class="row">
+        <!-- Large modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Submit payment</button>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+      <div class="modal-body">
+     
+      <H2>Are you sure want to complete your transaction</H2>
+      <h4><a class="btn btn-danger" href="order.html" role="button">Confirm</a></h4>
+     
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+        </div>
+    
+	</form>
+</div> <!-- tab-pane.// -->
+<div class="tab-pane fade" id="nav-tab-paypal">
+<p>Paypal is easiest way to pay online</p>
+<p>
+<button type="button" class="btn btn-primary"> <i class="fab fa-person"></i> Log in my Paypal </button>
+</p>
+<p><strong>Note:</strong> To use PayPal as the payment gateway provider for your online course you will need to apply for a Business account with them.<br>
+
+When this is done you will need to follow the steps below:<br>
+
+1.Log in to your Create account.<br>
+
+2.Click "Course" from the Top Menu.<br>
+
+3.Click "Course Settings" on the left-hand menu.<br>
+
+4.Click on "Payment Gateways".<br>
+
+5.Select the "Add New Gateway" button.<br>
+
+6.Click on the "PayPal" logo.<br>
+
+7.Select the type of PayPal integration you would like to use by clicking on the logo.<br>
+
+8.Fill in the required information that appears on the screen.<br>
+
+9.Click the "Add Gateway" button.<br>
+
+10.Your PayPal integration will now appear in your Payment Gateways area<br>
+
+
+ </p>
+</div>
+<div class="tab-pane fade" id="nav-tab-bank">
+<p>Bank accaunt details</p>
+<dl class="param">
+  <dt>BANK: </dt>
+  <dd> THE WORLD BANK</dd>
+</dl>
+<dl class="param">
+  <dt>Accaunt number: </dt>
+  <dd> 12345678912345</dd>
+</dl>
+<dl class="param">
+  <dt>IBAN: </dt>
+  <dd> 123456789</dd>
+</dl>
+<p><strong>Note:</strong> 
+     1. Log in to the account you plan to send money from, and look for an option to “add an account,” “add external accounts,” or “link accounts.” You might find those options (or something similar) in your bank’s Customer Service or Transfers menu.<br>
+     2. Provide the other bank’s routing number and your account number at that bank. If you don’t have that information, get those numbers from a check, from that account's online banking account, or from a representative at your bank.<br>
+3. After submitting that information, you may need to verify that you own the external account. You typically do this by providing a username and password for that account or by confirming small “test” transfers between the two banks.   </p>
+</div> <!-- tab-pane.// -->
+</div> <!-- tab-content .// -->
+
+</div> <!-- card-body.// -->
+</article> <!-- card.// -->
+
+
+	 <!-- col.// -->
+</div> <!-- row.// -->
+
+</div> 
+<!--container end.//-->
+
+<br><br>
+
+
+<br><br>
+   
+    <section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="home.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="About.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="Parent.html#question"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="course.html"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="student.html#project"><i class="fa fa-angle-double-right"></i>Project</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick Service</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="order.html"><i class="fa fa-angle-double-right"></i> Your Order</a></li>
+						<li><a href="login.html"><i class="fa fa-angle-double-right"></i>Register</a></li>
+						<li><a href="thanks.html"><i class="fa fa-angle-double-right"></i>Feedback</a></li>
+						<li><a href="index.html"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="donation.html"><i class="fa fa-angle-double-right"></i>Donation</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick Contacts</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="home.html#contact"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+						<li><a href="student.html#subscribe"><i class="fa fa-angle-double-right"></i>Free subscribe</a></li>
+						<li><a href="Parent.html#review"><i class="fa fa-angle-double-right"></i>Review</a></li>
+						<li><a href="Parent.html#join"><i class="fa fa-angle-double-right"></i>Join Us</a></li>
+						<li><a href="About.html#email" title="Design and developed by Suyash"><i class="fa fa-angle-double-right"></i>Connect</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="https://www.facebook.com/suyash.dude"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="https://twitter.com/_suyash_05"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.instagram.com/_suyash_05_/?hl=en"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.chaudharysuyashsri.com/"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				<hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white" id="copy">
+					<p><u><a href="https://techfest.org/">National Educational Corporation</a></u> is a Registered of Government, Inc. India [a wholly owned subsidiary India Delhi]</p>
+					<p class="h6">© All right Reversed.
+				</div>
+				<hr>
+			</div>	
+		</div>
+	</section>
+    
+ 
+</body>
+</html>

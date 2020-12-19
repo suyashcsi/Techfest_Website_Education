@@ -1,0 +1,1796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TECHFEST</title>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+ 
+  <style>
+          
+  
+/*topnav*/
+
+.nav-link.text-dark:hover {
+    color: #999 !important;
+}
+
+.custom-badge {
+    position: relative;
+    top: -7px;
+    right: -13px;
+    font-size: .7em;
+}
+.container-nav {
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (max-width: 767.98px) { 
+    .container-nav {
+        max-width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .topheader {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+
+
+/*background color*/
+  body {
+  background-color:#4B515D ;
+}
+/*carasoul*/
+      /* Carousel base class */
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+    header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header.overlay-wcs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+  
+h1{
+    color: black;
+} 
+p{
+    color: black;
+}
+      
+/*courses*/
+
+.service-6 {
+  font-family: "Montserrat", sans-serif;
+	color: #8d97ad;
+  font-weight: 300;
+}
+
+.service-6 h1, .service-6 h2, .service-6 h3, .service-6 h4, .service-6 h5, .service-6 h6 {
+  color: blue;
+}
+
+.service-6 .font-weight-medium {
+	font-weight: 500;
+}
+
+.service-6 .subtitle {
+    color: #8d97ad;
+    line-height: 24px;
+}
+
+.service-6 a {
+	text-decoration: none;	
+}
+
+.service-6 .wrap-service6-box {
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.service-6 .wrap-service6-box .card-body {
+  padding: 30px;
+}
+
+.service-6 .wrap-service6-box .card-body .linking {
+  color: #ffffff;
+}
+
+.service-6 .wrap-service6-box .card-body .linking:hover {
+  color: #263238;
+}
+
+.service-6 .wrap-service6-box .card-body p {
+  opacity: 0.8;
+}
+
+.service-6 .wrap-service6-box:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.service-6 .bg-danger-gradiant {
+	  background: #ff4d7e;
+    background: -webkit-linear-gradient(legacy-direction(to right), #ff4d7e 0%, #ff6a5b 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#ff4d7e), to(#ff6a5b));
+    background: -webkit-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+    background: -o-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+    background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%);
+}
+
+.service-6 .bg-info-gradiant {
+		background: #188ef4;
+    background: -webkit-linear-gradient(legacy-direction(to right), #188ef4 0%, #316ce8 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#188ef4), to(#316ce8));
+    background: -webkit-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+    background: -o-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+    background: linear-gradient(to right, #188ef4 0%, #316ce8 100%);
+}
+
+.service-6 .bg-success-gradiant {
+	  background: #2cdd9b;
+    background: -webkit-linear-gradient(legacy-direction(to right), #2cdd9b 0%, #1dc8cc 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#2cdd9b), to(#1dc8cc));
+    background: -webkit-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+    background: -o-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+    background: linear-gradient(to right, #2cdd9b 0%, #1dc8cc 100%);
+}
+
+.service-6 .btn-outline-success {
+		color: #2cdd9b !important;
+    background-color: transparent;
+    border-color: #2cdd9b !important;
+}
+
+.service-6 .btn-outline-success:hover {
+	  background: #2cdd9b;
+    border-color: #2cdd9b;
+    color: #ffffff !important;
+}
+
+.service-6 .btn-md {
+    padding: 15px 45px;
+    font-size: 16px;
+}
+
+/*button*/
+
+
+
+/*how to access*/
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+}
+.our-work-process {
+   
+    color: #fff;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+    font-family: arial;
+}
+.our-work-process h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.our-work-process .step-number {
+    background-color: #3498db;
+    font-size: 30px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    display: inline-block;
+    border: 3px solid #fff;
+    position: relative;
+    bottom: -26px;
+}
+.our-work-process .step-icon {
+    width: 80%;
+    height: 200px;
+    border: 3px solid #ffff;
+    border-radius: 8px;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+.our-work-process .step-box:hover .step-icon{
+    background-color: #3498db;
+}
+.our-work-process .step-icon i {
+    font-size: 80px;
+    position: absolute;
+    top: 37%;
+    left: 0px;
+    right: 0px;
+}
+.our-work-process label {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+  /*benefit*/
+  
+  *{
+  margin:0;
+  padding:0;
+}
+#categories{
+  overflow:hidden;
+  width:90%;
+  margin:0 auto;
+}
+.clr:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+#categories li{
+  position:relative;
+  list-style-type:none;
+  width:27.85714285714286%; /* = (100-2.5) / 3.5 */
+  padding-bottom: 32.16760145166612%; /* =  width /0.866 */
+  float:left;
+  overflow:hidden;
+  visibility:hidden;
+ 
+  -webkit-transform: rotate(-60deg) skewY(30deg);
+  -ms-transform: rotate(-60deg) skewY(30deg);
+  transform: rotate(-60deg) skewY(30deg);
+}
+#categories li:nth-child(3n+2){
+  margin:0 1%;
+}
+#categories li:nth-child(6n+4){
+  margin-left:0.5%;
+}
+#categories li:nth-child(6n+4), #categories li:nth-child(6n+5), #categories li:nth-child(6n+6) {
+	margin-top: -6.9285714285%;
+  margin-bottom: -6.9285714285%;
+  
+  -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  -ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  transform: translateX(50%) rotate(-60deg) skewY(30deg);
+}
+#categories li:nth-child(6n+4):last-child, #categories li:nth-child(6n+5):last-child, #categories li:nth-child(6n+6):last-child{
+  margin-bottom:0%;
+}
+#categories li *{
+  position:absolute;
+  visibility:visible;
+}
+#categories li > div{
+  width:100%;
+  height:100%;
+  text-align:center;
+  color:#fff;
+  overflow:hidden;
+  
+  -webkit-transform: skewY(-30deg) rotate(60deg);
+  -ms-transform: skewY(-30deg) rotate(60deg);
+  transform: skewY(-30deg) rotate(60deg);
+  
+	-webkit-backface-visibility:hidden;
+  
+}
+
+/* HEX CONTENT */
+#categories li img{
+  left:-100%; right:-100%;
+  width: auto; height:100%;
+  margin:0 auto;   
+}
+
+#categories div h1, #categories div p{
+  width:90%;
+  padding:0 5%;
+  background-color:#008080; background-color: rgba(0, 128, 128, 0.8);
+  font-family: 'Raleway', sans-serif;
+  
+  -webkit-transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
+  -ms-transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
+  transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
+}
+#categories li h1{
+  bottom:110%;
+  font-style:italic;
+  font-weight:normal;
+  font-size:1.5em;
+  padding-top:100%;
+  padding-bottom:100%;
+}
+#categories li h1:after{
+	content:'';
+  display:block;
+  position:absolute;
+  bottom:-1px; left:45%;
+  width:10%;
+  text-align:center;
+  z-index:1;
+  border-bottom:2px solid #fff;
+}
+#categories li p{
+	padding-top:50%;
+	top:110%;
+	padding-bottom:50%;
+}
+
+
+/* HOVER EFFECT  */
+
+#categories li div:hover h1 {
+  bottom:50%;
+  padding-bottom:10%;
+}
+
+#categories li div:hover p{
+  top:50%;
+  padding-top:10%;
+}
+#fork{
+  position:fixed;
+  top:0;
+  left:0;
+  color:#000;
+  text-decoration:none;
+  border:1px solid #000;
+  padding:.5em .7em;
+  margin:1%;
+  transition: color .5s;
+  overflow:hidden;
+}
+#fork:before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 130%; height: 100%;
+  background: #000;
+  z-index: -1;
+  transform-origin:0 0 ;
+  transform:translateX(-100%) skewX(-45deg);
+  transition: transform .5s;
+}
+#fork:hover {
+  color: #fff;
+}
+#fork:hover:before {
+  transform: translateX(0) skewX(-45deg);
+}
+
+/*why choose us*/
+
+.demo{ background-color: #dbdbdb; }
+.main-timeline{ font-family: 'Roboto', sans-serif; }
+.main-timeline:before{
+    content: '';
+    background-color: #e7e7e7;
+    height: 100%;
+    width: 15px;
+    border-radius: 10px;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+.main-timeline:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.main-timeline .timeline{
+    width: 50%;
+    padding: 0 0 0 25px;
+    margin: 0 0 30px 10px;
+    float: right;
+    position: relative;
+}
+.main-timeline .timeline:after{
+    content: '';
+    background-color: #734D8E;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #fff, 0 0 10px #333;
+    transform: translateY(-50%);
+    position: absolute;
+    left: -7px;
+    top: 50%;
+}
+.main-timeline .timeline-content{
+    color: #555;
+    background: linear-gradient(to right,#734D8E,#B26BC6 22%);
+    padding: 0 0 0 120px;
+    display: block;
+    position: relative;
+    clip-path: polygon(7% 0, 100% 0, 100% 100%, 7% 100%, 0 50%);
+}
+.main-timeline .timeline-content:hover{ text-decoration: none; }
+.main-timeline .timeline-icon{
+    color: #fff;
+    font-size: 45px;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 25px;
+}
+.main-timeline .inner-content{
+    color: #555;
+    background-color: #fff;
+    min-height: 110px;
+    padding: 15px 15px 15px 0;
+    position: relative;
+}
+.main-timeline .inner-content:before{
+    content: '';
+    background-color: #fff;
+    height: 98%;
+    width: 80px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    left: -37px;
+    top: 50%;
+    z-index: -1;
+}
+.main-timeline .title{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+}
+.main-timeline .description{
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.main-timeline .timeline:nth-child(even){
+    padding: 0 25px 0 0;
+    margin: 0 10px 30px 0;
+    float: left;
+}
+.main-timeline .timeline:nth-child(even):after{
+    left: auto;
+    right: -8px;
+}
+.main-timeline .timeline:nth-child(even) .timeline-content{
+    padding: 0 120px 0 0;
+    clip-path: polygon(93% 0, 100% 50%, 93% 100%, 0 100%, 0 0);
+}
+.main-timeline .timeline:nth-child(even) .timeline-icon{
+    left: auto;
+    right: 25px;
+}
+.main-timeline .timeline:nth-child(even) .inner-content{ padding: 15px 10px 15px 15px; }
+.main-timeline .timeline:nth-child(even) .inner-content:before{
+    left: auto;
+    right: -37px;
+}
+.main-timeline .timeline:nth-child(4n+2):after{ background-color: #1c6f82; }
+.main-timeline .timeline:nth-child(4n+2) .timeline-content{
+    background: linear-gradient(to left,#1c6f82,#4491A2 22%);
+}
+.main-timeline .timeline:nth-child(4n+3):after{ background-color: #4e5db2; }
+.main-timeline .timeline:nth-child(4n+3) .timeline-content{
+    background: linear-gradient(to right,#4e5db2,#7582D1 22%);
+}
+.main-timeline .timeline:nth-child(4n+4):after{ background-color: #525156; }
+.main-timeline .timeline:nth-child(4n+4) .timeline-content{
+    background: linear-gradient(to left,#525156,#686C75 22%);
+}
+@media screen and (max-width:767px){
+    .main-timeline:before{
+        left: 19px;
+        transform: translateX(0);
+    }
+    .main-timeline .timeline,
+    .main-timeline .timeline:nth-child(even){
+        width: 100%;
+        margin: 0 0 30px;
+        padding: 0 0 0 25px;
+    }
+    .main-timeline .timeline:after,
+    .main-timeline .timeline:nth-child(even):after{
+        left: 3px;
+    }
+    .main-timeline .timeline-icon,
+    .main-timeline .timeline:nth-child(even) .timeline-icon{
+        font-size: 30px;
+        left: 23px;
+    }
+    .main-timeline .timeline-content,
+    .main-timeline .timeline:nth-child(even) .timeline-content{
+        padding: 0 0 0 90px;
+        clip-path: polygon(7% 0, 100% 0, 100% 100%, 7% 100%, 0 50%);
+    }
+    .main-timeline .inner-content:before,
+    .main-timeline .timeline:nth-child(even) .inner-content:before{
+        width: 50px;
+        left: -25px;
+    }
+}
+@media screen and (max-width:567px){
+    .main-timeline .timeline-content,
+    .main-timeline .timeline:nth-child(even) .timeline-content{
+        padding: 0 0 0 65px;
+        clip-path: polygon(5% 0, 100% 0, 100% 100%, 5% 100%, 0 50%);
+    }
+    .main-timeline .timeline-icon,
+    .main-timeline .timeline:nth-child(even) .timeline-icon{
+        font-size: 21px;
+        left: 9px;
+    }
+    .main-timeline .title{ font-size: 18px; }
+}
+
+
+
+/*news*/
+
+.b-0 {
+    bottom: 0;
+}
+.bg-shadow {
+    background: rgba(76, 76, 76, 0);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(179, 171, 171, 0)), color-stop(49%, rgba(48, 48, 48, 0.37)), color-stop(100%, rgba(19, 19, 19, 0.8)));
+    background: linear-gradient(to bottom, rgba(179, 171, 171, 0) 0%, rgba(48, 48, 48, 0.71) 49%, rgba(19, 19, 19, 0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0 );
+}
+.top-indicator {
+    right: 0;
+    top: 1rem;
+    bottom: inherit;
+    left: inherit;
+    margin-right: 1rem;
+}
+.overflow {
+    position: relative;
+    overflow: hidden;
+}
+.zoom img {
+    transition: all 0.2s linear;
+}
+.zoom:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/*courses access*/
+
+body{
+    font-family:'Roboto', sans-serif;;
+}
+
+.softwareDevelopment {
+    padding: 50px 0;
+    background: #4B515D;
+}
+
+.softwareDevelopment p {
+    max-width: 1000px;
+    margin: auto;
+    color: #fff;
+    text-align: center
+}
+
+.softwareDevelopment h2 {
+    font-size: 50px;
+    font-weight: 100;
+    margin-bottom: 20px
+}
+
+.softwareDevelopment h2 i {
+    color: #ffb000;
+    
+    text-transform: capitalize
+}
+
+.softwareDevelopment h2 span {
+    color: #3557f5;
+    font-weight: 700
+}
+.softwareDevelopment {
+    overflow: hidden
+}
+
+.softwareDevelopment .row {
+    margin-top: 50px
+}
+
+.softwareDevelopment .softBox {
+    background: #fff;
+    padding: 40px;
+    position: relative;
+    -webkit-box-shadow: 0 8px 27px #222;
+    box-shadow: 0 8px 27px #222;
+    margin-bottom: 3rem
+}
+
+.softwareDevelopment .softBox>img {
+    margin-top: 70px
+}
+
+.softwareDevelopment .softBox:hover {
+    cursor: pointer
+}
+
+.softwareDevelopment .softBox:hover .softBoxInner {
+    top: -0%;
+    -webkit-box-shadow: 0 8px 27px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 8px 27px rgba(0, 0, 0, 0.6);
+    z-index: 2
+}
+
+.softwareDevelopment .softBox .softBoxInner {
+    position: absolute;
+    -webkit-transition: 0.4s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+    transition: 0.4s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+    top: -100%;
+    left: 0;
+    padding: 40px;
+    width: 100%;
+    background: url(corona7.png) no-repeat center/cover;
+    z-index: -2
+}
+
+.softwareDevelopment .softBox .softBoxInner p,
+.softwareDevelopment .softBox .softBoxInner a,
+.softwareDevelopment .softBox .softBoxInner h3 {
+    position: relative;
+    z-index: 2
+}
+
+.softwareDevelopment .softBox .softBoxInner p {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 20px 0
+}
+
+.softwareDevelopment .softBox .softBoxInner .btn-talk {
+    background: #fff
+}
+
+.softwareDevelopment .softBox .softBoxInner .btn-talk:hover {
+    background-color:lightskyblue;
+}
+
+.softwareDevelopment .softBox .softBoxInner .btn-talk::before {
+    border: 2px solid #fff !important
+}
+
+.softwareDevelopment .softBox .softBoxInner h3 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 900
+}
+
+.softwareDevelopment .softBox .softBoxInner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient;
+    z-index: 1
+}
+
+.softwareDevelopment .softBox h4 {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 20px 0 0
+}
+
+
+.btn-talk {
+    background: #ffb81d;
+    color: #000;
+    border-radius: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    position: relative;
+    height: 50px;
+    margin-top: 15px;
+    padding: 10px 30px
+}
+
+.btn-talk::before {
+    content: '';
+    background: transparent;
+    border: 2px solid #e6ebfe;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    left: 10px;
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55)
+}
+
+
+
+.btn-talk:hover::before {
+    top: 0;
+    left: 0;
+    z-index: 1
+}
+
+/*our teacher*/
+
+.row.heading h2 {
+    color: #fff;
+    font-size: 52.52px;
+    line-height: 95px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 40px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.heading.heading-icon {
+    display: block;
+}
+.padding-lg {
+	display: block;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.practice-area.padding-lg {
+    padding-bottom: 55px;
+    padding-top: 55px;
+}
+.practice-area .inner{ 
+     border:1px solid #999999; 
+	 text-align:center; 
+	 margin-bottom:28px; 
+	 padding:40px 25px;
+}
+.our-webcoderskull .cnt-block:hover {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    border: 0;
+}
+.practice-area .inner h3{ 
+    color:#3c3c3c; 
+	font-size:24px; 
+	font-weight:500;
+	font-family: 'Poppins', sans-serif;
+	padding: 10px 0;
+}
+.practice-area .inner p{ 
+    font-size:14px; 
+	line-height:22px; 
+	font-weight:400;
+}
+.practice-area .inner img{
+	display:inline-block;
+}
+
+
+
+.our-webcoderskull .cnt-block{ 
+   float:left; 
+   width:100%; 
+   background:#fff; 
+   padding:30px 20px; 
+   text-align:center; 
+   border:2px solid #d5d5d5;
+   margin: 0 0 28px;
+}
+.our-webcoderskull .cnt-block figure{
+   width:148px; 
+   height:148px; 
+   border-radius:100%; 
+   display:inline-block;
+   margin-bottom: 15px;
+}
+.our-webcoderskull .cnt-block img{ 
+   width:148px; 
+   height:148px; 
+   border-radius:100%; 
+}
+.our-webcoderskull .cnt-block h3{ 
+   color:#2a2a2a; 
+   font-size:20px; 
+   font-weight:500; 
+   padding:6px 0;
+   text-transform:uppercase;
+}
+.our-webcoderskull .cnt-block h3 a{
+  text-decoration:none;
+	color:#2a2a2a;
+}
+.our-webcoderskull .cnt-block h3 a:hover{
+	color:#337ab7;
+}
+.our-webcoderskull .cnt-block p{ 
+   color:#2a2a2a; 
+   font-size:13px; 
+   line-height:20px; 
+   font-weight:400;
+}
+.our-webcoderskull .cnt-block .follow-us{
+	margin:20px 0 0;
+}
+.our-webcoderskull .cnt-block .follow-us li{ 
+    display:inline-block; 
+	width:auto; 
+	margin:0 5px;
+}
+.our-webcoderskull .cnt-block .follow-us li .fa{ 
+   font-size:24px; 
+   color:#767676;
+}
+.our-webcoderskull .cnt-block .follow-us li .fa:hover{ 
+   color:#025a8e;
+}
+
+
+
+/*contact*/
+form_main {
+    width: 100%;
+}
+.form_main h4 {
+    font-family: roboto;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.heading {
+    border-bottom: 1px solid #fcab0e;
+    padding-bottom: 9px;
+    position: relative;
+}
+.heading span {
+    background: #9e6600 none repeat scroll 0 0;
+    bottom: -2px;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 75px;
+}   
+.form {
+    border-radius: 7px;
+    padding: 6px;
+}
+.txt[type="text"] {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+.txt_3[type="text"] {
+    margin: 10px 0 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+.txt2[type="submit"] {
+    background: #242424 none repeat scroll 0 0;
+    border: 1px solid #4f5c04;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 35px;
+    margin: 10px 0;
+    padding: 0;
+    text-transform: uppercase;
+    width: 30%;
+}
+.txt2:hover {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #5793ef;
+    transition: all 0.5s ease 0s;
+}
+
+/*footer*/
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: black !important;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer p{
+	
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+
+
+ /*content text*/
+
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+h2 { 
+	font: bold 300% Consolas, Monaco, monospace;
+	border-right: .1em solid black;
+	width: 16.5em; 
+	width: 19ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: typing 2s steps(21, end),
+	           blink-caret .5s step-end infinite alternate;
+        
+}
+h2 {
+    font-size: 30px;
+    line-height: 38px;
+    color: white;
+}
+
+
+
+      
+      </style>
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<a class="navbar-brand" href="home.html"> <img class="logo" src="picdeo.png" height="40"> Picdeo Course </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbar1">
+    <ul class="navbar-nav ml-auto"> 
+
+<li class="nav-item"><a class="nav-link" href="donation.html"><img src="heart-2x.png"> Donate </a></li>
+
+<li class="nav-item"><a class="nav-link" href="login.html"> <img src="person-2x.png"> User ID </a></li>
+<li class="nav-item">
+         <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form></li>
+    </ul>
+  </div>
+</nav>
+
+    
+    <div class="bottom bg-light sticky-top shadow-sm">
+        <div class="container-nav">
+            <ul class="nav nav-bottom nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link bg-primary text-white" terget="_blank" href="About.html"> <img src="people-2x.png">  <span class="d-none d-sm-inline-block d-md-inline-block">Department</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-primary text-white" terget="_blank" href="student.html#project"> <img src="puzzle-piece-2x.png"><span class="d-none d-sm-inline-block d-md-inline-block">Project</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-primary text-white" href="About.html#service"><img src="graph-2x.png"> <span class="d-none d-sm-inline-block d-md-inline-block">Services</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-primary text-white" href="thanks.html">  <span class="badge badge-danger badge-pill custom-badge">20</span> <img src="cloudy-2x.png"> <span class="d-none d-sm-inline-block d-md-inline-block">Notification</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-primary text-white" href="login.html"><img src="wrench-2x.png"> <span class="d-none d-sm-inline-block d-md-inline-block">Setting</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </div> 
+  
+  <header>
+  <div class="overlay-wcs"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="school.mp4" type="video/mp4">
+  </video>
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        
+         
+      </div>
+    </div>
+  </div>
+</header>
+    <br>
+    <br>
+    <br>
+     <div class="content">
+        <center> <h2><strong>Our Picdeo Chapter</strong></h2> </center> 
+</div>
+
+<div class="py-5 service-6">
+    <div class="container">
+        <!-- Row  -->
+        <div class="row">
+            <!-- Column -->
+            <div class="col-md-4 wrap-service6-box">
+                <div class="card border-0 bg-success-gradiant text-white mb-4">
+                    <div class="card-body">
+                        <h6 class="font-weight-medium text-white">Free Courses Chapter</h6>
+                        <p class="mt-3">Study a variety of subjects with top universities. Start today!<br> Up to 400 free courses available. </p>
+                        <a href="course.html" class="linking">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+            <!-- Column -->
+            <div class="col-md-4 wrap-service6-box">
+                <div class="card border-0 bg-info-gradiant text-white mb-4">
+                    <div class="card-body">
+                        <h6 class="font-weight-medium text-white">Student Chapter</h6>
+                        <p class="mt-3">Find The Right Course for Yourself, Unlimited Access To Free Online Courses. Join 17 million students. </p>
+                        <a href="student.html" class="linking">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+            <!-- Column -->
+            <div class="col-md-4 wrap-service6-box">
+                <div class="card border-0 bg-danger-gradiant text-white mb-4">
+                    <div class="card-body">
+                        <h6 class="font-weight-medium text-white">Parent/Teacher Chapter</h6>
+                        <p class="mt-3">Curiosity is the foundation of learning. Our free webinars, online courses and programs help you explore new topics. </p>
+                        <a href="Parent.html" class="linking">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+						
+        </div>
+    </div>
+</div>
+     <div class="content">
+        <center> <h2><strong>Connect with Course</strong></h2> </center> 
+</div>
+    
+ <div class="our-work-process">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+         
+        
+        
+      </div>
+        
+      <div class="col-6 col-lg-3">
+           
+        <div class="step-box">
+          
+          <span class="step-number">1</span>
+         
+          <div class="step-icon"><i class="fa fa-book" aria-hidden="true"></i>   </div>
+         
+          <label>Get Enrolled</label>
+         
+        </div>
+          
+           
+      </div>
+       
+
+      <div class="col-6 col-lg-3">
+        <div class="step-box">
+          <span class="step-number">2</span>
+          <div class="step-icon"><i class="fa fa-archive" aria-hidden="true"></i></div>
+          <label>Login</label>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <div class="step-box">
+          <span class="step-number">3</span>
+          <div class="step-icon"><i class="fa fa-truck" aria-hidden="true"></i></div>
+          <label>Get your certificate</label>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <div class="step-box">
+          <span class="step-number">4</span>
+          <div class="step-icon"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></div>
+          <label>Done</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <div class="content">
+        <center> <h2><strong>Your Learning Path</strong></h2> </center> 
+</div>
+    
+    <br>
+    <br>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="main-timeline">
+                <div class="timeline">
+                    <a href="#" class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <div class="inner-content">
+                            <h3 class="title">Create learning</h3>
+                            <p class="description">
+                               Decide on a learning method or a blended approach you want to follow and stick with it. This will define the type of content and activities,
+                               as well as the format of your whole academy, since it’s not just about the course
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="timeline">
+                    <a href="#" class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <div class="inner-content">
+                            <h3 class="title">Adding material</h3>
+                            <p class="description">
+                                Putting all of this into practice means thinking about how you can use the learning materials and the tools you have in your inventory in the most engaging way.
+                                This should help to create an enhanced learning experience for your students.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="timeline">
+                    <a href="#" class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <div class="inner-content">
+                            <h3 class="title">Connect Analytics</h3>
+                            <p class="description">
+                                Before you are ready to launch your academy, you need to set up your analytics tools. This is a crucial step to take since such tools 
+                                can help you assess the overall performance of your online academy in terms of website traffic and brand exposure.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="timeline">
+                    <a href="#" class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <div class="inner-content">
+                            <h3 class="title">Schedule</h3>
+                            <p class="description">
+                                In an online course, students engage with the same course material, discussions, and activities within a week (or module); however, 
+                                they complete assignments, activities, and contribute to the discussions at times that are most convenient for them.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+    
+     <div class="content">
+        <center> <h2><strong>Our Best Course</strong></h2> </center> 
+</div>
+    
+     <section class="softwareDevelopment">
+            <div class="container">
+               
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="softBox">
+                            <div class="softBoxInner">
+                                <h3>Software <br> Development</h3>
+                                <p>Software development is the process of conceiving, specifying, designing, programming, documenting, testing creating and maintaining applications, frameworks.</p>
+                                <a href="course.html" class="btn btn-talk wow bounceInLeft">Learn More</a>
+                            </div>
+                            <img src="aperture-8x.png" alt="">
+                            <h4 style="color:#fa671f;">Software <br> Development
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="softBox">
+                            <div class="softBoxInner">
+                                <h3>Electrical <br> Transform</h3>
+                                <p>Electrical engineering is an engineering discipline concerned with the study, design and application of equipment.</p>
+                                <a href="course.html" class="btn btn-talk wow bounceInLeft">Learn More</a>
+                            </div>
+                            <img src="audio-8x.png" alt="">
+                            <h4 style="color:#fa671f;">Electrical <br> Transform
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="softBox">
+                            <div class="softBoxInner">
+                                <h3>Emotional
+                                    <br> Intelligence</h3>
+                                <p>Emotional intelligence (otherwise known as emotional quotient or EQ) is the ability to understand, in positive ways to relieve stress, communicate effectively.</p>
+                                <a href="course.html" class="btn btn-talk wow bounceInLeft">Learn More</a>
+                            </div>
+                            <img src="audio-spectrum-8x.png" alt="">
+                            <h4 style="color:#4cc975;">Emotional <br> Intelligence
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="softBox">
+                            <div class="softBoxInner">
+                                <h3>Mobile App
+                                    <br> Development</h3>
+                                <p>Mobile application development is the process of creating software applications that run on a mobile device.</p>
+                                <a href="course.html" class="btn btn-talk wow bounceInLeft">Learn More</a>
+                            </div>
+                            <img src="fork-8x.png" alt="">
+                            <h4 style="color:#25bbfa;">Mobile App
+                                <br> Development
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="softBox">
+                            <div class="softBoxInner">
+                                <h3>Web App
+                                    <br> Development</h3>
+                                <p>Web application development is the creation of application programs that reside on remote servers over the Internet.</p>
+                                <a href="course.html" class="btn btn-talk wow bounceInLeft">Learn More</a>
+                            </div>
+                            <img src="hard-drive-8x.png" alt="">
+                            <h4 style="color:#faa51f;">Web App <br> Development
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="softBox">
+                            <div class="softBoxInner">
+                                <h3>Software
+                                    <br> Testing</h3>
+                                <p>Software testing is the process of verifying a system with the purpose of identifying any errors or gaps.</p>
+                                <a href="course.html" class="btn btn-talk wow bounceInLeft">Learn More</a>
+                            </div>
+                            <img src="laptop-8x.png" alt="">
+                            <h4 style="color:#d52ea4;">Software <br> Testing
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    
+ <div class="content">
+        <center> <h2><strong>Our Teacher</strong></h2> </center> 
+</div>
+<section class="our-webcoderskull padding-lg">
+  <div class="container">
+    <div class="row heading heading-icon">
+       
+    </div>
+    <ul class="row">
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvkhef03Xe6hgwxJvOOFeOJQT71NbRrMU34Q&usqp=CAU" class="img-responsive" alt=""></figure>
+            <h3><a href="#">Professor Joseph Sir </a></h3>
+            <p>M.Tech, Ph.D</p>
+            <ul class="follow-us clearfix">
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="data:image/jpeg;base64,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" class="img-responsive" alt=""></figure>
+            <h3><a href="#"> Professor Sara Ma'am</a></h3>
+            <p> Ph.D., M.tech, B.E. (Hons)</p>
+            <ul class="follow-us clearfix">
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="https://files.erasmusmagazine.nl/app/uploads/sites/8/2017/11/02175451/foto-interview-ivar-1280x853.jpg" class="img-responsive" alt=""></figure>
+            <h3><a href="#">Professor Arjun Sir </a></h3>
+            <p>BE, M.Tech.</p>
+            <ul class="follow-us clearfix">
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+       </li>
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="https://im.rediff.com/money/2015/sep/24ppl1.jpg" class="img-responsive" alt=""></figure>
+            <h3><a href="#">Professor Alia Ma'am  </a></h3>
+            <p>M.Tech</p>
+            <ul class="follow-us clearfix">
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+      </li>
+    </ul>
+  </div>
+</section>
+    
+    <div class="content">
+        <center> <h2><strong>World Trending News</strong></h2> </center> 
+</div>
+    
+ <div class="row">
+        <div class="col-12 pb-5">
+            <!--SECTION START-->
+            <section class="row">
+                <!--Start slider news-->
+                <div class="col-12 col-md-6 pb-0 pb-md-3 pt-2 pr-md-1">
+                    <div id="featured" class="carousel slide carousel" data-ride="carousel">
+                        <!--dots navigate-->
+                        <ol class="carousel-indicators top-indicator">
+                            <li data-target="#featured" data-slide-to="0" class="active"></li>
+                            <li data-target="#featured" data-slide-to="1"></li>
+                            <li data-target="#featured" data-slide-to="2"></li>
+                            <li data-target="#featured" data-slide-to="3"></li>
+                        </ol>
+                        
+                        <!--carousel inner-->
+                        <div class="carousel-inner">
+                            <!--Item slider-->
+                            <div class="carousel-item active">
+                                <div class="card border-0 rounded-0 text-light overflow zoom">
+                                    <div class="position-relative">
+                                        <!--thumbnail img-->
+                                        <div class="ratio_left-cover-1 image-wrapper">
+                                            <a href="https://www.indiatoday.in/education-today/featurephilia/story/online-education-redefining-the-roles-of-educators-1748986-2020-12-14">
+                                                <img class="img-fluid w-100"
+                                                     src="new1.jpg"
+                                                     alt="Bootstrap news template">
+                                            </a>
+                                        </div>
+                                        <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                                            <!--title-->
+                                            <a href="https://www.indiatoday.in/education-today/featurephilia/story/online-education-redefining-the-roles-of-educators-1748986-2020-12-14">
+                                                <h1 class="h3 post-title text-white my-1">Online Education: Redefining the roles of Educators</h1>
+                                            </a>
+                                            <!-- meta title -->
+                                            <div class="news-meta">
+                                                <span class="news-author">by <a class="text-white font-weight-bold" href="../category/author.html">Jennifer</a></span>
+                                                <span class="news-date">Oct 22, 2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--Item slider-->
+                            <div class="carousel-item">
+                                <div class="card border-0 rounded-0 text-light overflow zoom">
+                                    <div class="position-relative">
+                                        <!--thumbnail img-->
+                                        <div class="ratio_left-cover-1 image-wrapper">
+                                            <a href="https://www.bbc.com/news/education-55298095">
+                                                <img class="img-fluid w-100"
+                                                     src="new2.jpg"
+                                                     alt="Bootstrap news theme">
+                                            </a>
+                                        </div>
+                                        <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                                            <!--title-->
+                                            <a href="https://www.bbc.com/news/education-55298095">
+                                                <h1 class="h3 post-title text-white my-1"> London council tells schools to teach online</h1>
+                                            </a>
+                                            <!-- meta title -->
+                                            <div class="news-meta">
+                                                <span class="news-author">by <a class="text-white font-weight-bold" href="../category/author.html"> Branwen Jeffreys</a></span>
+                                                <span class="news-date">Oct 22, 2019</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--Item slider-->
+                            <div class="carousel-item">
+                                <div class="card border-0 rounded-0 text-light overflow zoom">
+                                    <div class="position-relative">
+                                        <!--thumbnail img-->
+                                        <div class="ratio_left-cover-1 image-wrapper">
+                                            <a href="https://www.theguardian.com/education/2020/dec/13/heads-call-for-all-lessons-to-go-online-for-schools-in-mass-virus-testing-areas">
+                                                <img class="img-fluid w-100"
+                                                     src="new3.jpg"
+                                                     alt="Bootstrap blog template">
+                                            </a>
+                                        </div>
+                                        <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                                            <!--title-->
+                                            <a href="https://www.theguardian.com/education/2020/dec/13/heads-call-for-all-lessons-to-go-online-for-schools-in-mass-virus-testing-areas">
+                                                <h1 class="h3 post-title text-white my-1">Covid: heads call for all lessons to go online for schools in mass testing areas</h1>
+                                            </a>
+                                            <!-- meta title -->
+                                            <div class="news-meta">
+                                                <span class="news-author">by <a class="text-white font-weight-bold" href="../category/author.html">Donna Ferguson</a></span>
+                                                <span class="news-date">Sept 22, 2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--Item slider-->
+                            <div class="carousel-item">
+                                <div class="card border-0 rounded-0 text-light overflow zoom">
+                                    <div class="position-relative">
+                                        <!--thumbnail img-->
+                                        <div class="ratio_left-cover-1 image-wrapper">
+                                            <a href="https://www.indiatvnews.com/news/india/haryana-schools-students-get-tablets-class-8-12-promote-online-education-coronavirus-667994">
+                                                <img class="img-fluid w-100"
+                                                     src="new11.jpg"
+                                                     alt="Bootstrap portal template">
+                                            </a>
+                                        </div>
+                                        <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                                            <!--title-->
+                                            <a href="https://www.indiatvnews.com/news/india/haryana-schools-students-get-tablets-class-8-12-promote-online-education-coronavirus-667994">
+                                                <h1 class="h3 post-title text-white my-1">Haryana govt to provide tablets to students of class 8-12 to promote online education</h1>
+                                            </a>
+                                            <!-- meta title -->
+                                            <div class="news-meta">
+                                                <span class="news-author">by <a class="text-white font-weight-bold" href="../category/author.html">India TV</a></span>
+                                                <span class="news-date">Oct 28, 2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end item slider-->
+                        </div>
+                        <!--end carousel inner-->
+                    </div>
+                    
+                    <!--navigation-->
+                    <a class="carousel-control-prev" href="#featured" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#featured" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <!--End slider news-->
+                
+                <!--Start box news-->
+                <div class="col-12 col-md-6 pt-2 pl-md-1 mb-3 mb-lg-4">
+                    <div class="row">
+                        <!--news box-->
+                        <div class="col-6 pb-1 pt-0 pr-1">
+                            <div class="card border-0 rounded-0 text-white overflow zoom">
+                                <div class="position-relative">
+                                    <!--thumbnail img-->
+                                    <div class="ratio_right-cover-2 image-wrapper">
+                                        <a href="https://www.timesnownews.com/education/article/year-2020-wasted-or-saved-with-schools-closed-were-online-classes-a-success-poll/694368">
+                                            <img class="img-fluid"
+                                                 src="new7.jpg"
+                                                 alt="simple blog template bootstrap">
+                                        </a>
+                                    </div>
+                                    <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                                        <!-- category -->
+                                        <a class="p-1 badge badge-primary rounded-0" href="https://www.timesnownews.com/education/article/year-2020-wasted-or-saved-with-schools-closed-were-online-classes-a-success-poll/694368">Lifestyle</a>
+
+                                        <!--title-->
+                                        <a href="https://www.timesnownews.com/education/article/year-2020-wasted-or-saved-with-schools-closed-were-online-classes-a-success-poll/694368">
+                                            <h1 class="h5 text-white my-1">Year 2020 Wasted or Saved? With schools closed, were Online Classes a success?</h1>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--news box-->
+                        <div class="col-6 pb-1 pl-1 pt-0">
+                            <div class="card border-0 rounded-0 text-white overflow zoom">
+                                <div class="position-relative">
+                                    <!--thumbnail img-->
+                                    <div class="ratio_right-cover-2 image-wrapper">
+                                        <a href="https://www.bloombergquint.com/gadfly/families-despair-at-how-hong-kong-keeps-flunking-covid-19">
+                                            <img class="img-fluid"
+                                                 src="news12.jpg"
+                                                 alt="bootstrap templates for blog">
+                                        </a>
+                                    </div>
+                                    <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                                        <!-- category -->
+                                        <a class="p-1 badge badge-primary rounded-0" href="https://www.bloombergquint.com/gadfly/families-despair-at-how-hong-kong-keeps-flunking-covid-19">People</a>
+                                        <!--title-->
+                                        <a href=https://www.bloombergquint.com/gadfly/families-despair-at-how-hong-kong-keeps-flunking-covid-19"">
+                                            <h1 class="h5 text-white my-1">My Kid’s School Is Out. When Will It Reopen?</h1>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--news box-->
+                        <div class="col-6 pb-1 pr-1 pt-1">
+                            <div class="card border-0 rounded-0 text-white overflow zoom">
+                                <div class="position-relative">
+                                    <!--thumbnail img-->
+                                    <div class="ratio_right-cover-2 image-wrapper">
+                                        <a href="https://www.usatoday.com/in-depth/news/education/2020/12/13/covid-online-school-tutoring-plan/6334907002/">
+                                            <img class="img-fluid"
+                                                 src="news9.jpg"
+                                                 alt="bootstrap blog wordpress theme">
+                                        </a>
+                                    </div>
+                                    <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                                        <!-- category -->
+                                        <a class="p-1 badge badge-primary rounded-0" href="https://www.usatoday.com/in-depth/news/education/2020/12/13/covid-online-school-tutoring-plan/6334907002/">Government</a>
+                                        <!--title-->
+                                        <a href="https://www.usatoday.com/in-depth/news/education/2020/12/13/covid-online-school-tutoring-plan/6334907002/">
+                                            <h1 class="h5 text-white my-1">Students are falling behind in online school. Where's the COVID-19 'disaster plan' to catch them up?</h1>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--news box-->
+                        <div class="col-6 pb-1 pl-1 pt-1">
+                            <div class="card border-0 rounded-0 text-white overflow zoom">
+                                <div class="position-relative">
+                                    <!--thumbnail img-->
+                                    <div class="ratio_right-cover-2 image-wrapper">
+                                        <a href="https://www.bbc.com/news/uk-northern-ireland-55184673">
+                                            <img class="img-fluid"
+                                                 src="news10.jpg"
+                                                 alt="blog website templates bootstrap">
+                                        </a>
+                                    </div>
+                                    <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                                        <!-- category -->
+                                        <a class="p-1 badge badge-primary rounded-0" href="https://www.bbc.com/news/uk-northern-ireland-55184673">World</a>
+                                        <!--title-->
+                                        <a href="https://www.bbc.com/news/uk-northern-ireland-55184673">
+                                            <h1 class="h5 text-white my-1">Coronavirus: University teaching to move online from 19 December</h1>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end news box-->
+                    </div>
+                </div>
+                <!--End box news-->
+            </section>
+            <!--END SECTION-->
+        </div>
+    </div>
+   <div class="content">
+       <div id="contact">
+        <center> <h2><strong>Contact Address</strong></h2> </center> 
+       </div>
+</div>
+    
+    <div class="container" id="contatti">
+
+<hr>
+  <div class="row">
+    <div class="col-sm-8">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11880.492291371422!2d12.4922309!3d41.8902102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28f1c82e908503c4!2sColosseo!5e0!3m2!1sit!2sit!4v1524815927977" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <div class="col-sm-4" id="contact2">
+        
+      
+		<div class="form_main">
+                <h4 class="heading"><strong>Quick </strong> Contact <span></span></h4>
+                <div class="form">
+                <form action="contact_send_mail.php" method="post" id="contactFrm" name="contactFrm">
+                    <input type="text" required="" placeholder="Please input your Name" value="" name="name" class="txt">
+                    <input type="text" required="" placeholder="Please input your mobile No" value="" name="mob" class="txt">
+                    <input type="text" required="" placeholder="Please input your Email" value="" name="email" class="txt">
+                    
+                	 <textarea placeholder="Your Message" name="mess" type="text" class="txt_3"></textarea>
+                     <input type="submit" value="submit" name="submit" class="txt2">
+                </form>
+            </div>
+            </div>
+   
+        
+        
+      </div>
+  </div>
+</div>
+
+    
+    
+
+    
+    
+    <div class="container">
+	<div class="row">
+    
+        </div>
+
+</div>
+    
+   <section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="home.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="About.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="Parent.html#question"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="course.html"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="student.html#project"><i class="fa fa-angle-double-right"></i>Project</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick Service</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="order.html"><i class="fa fa-angle-double-right"></i> Your Order</a></li>
+						<li><a href="login.html"><i class="fa fa-angle-double-right"></i>Register</a></li>
+						<li><a href="thanks.html"><i class="fa fa-angle-double-right"></i>Feedback</a></li>
+						<li><a href="index.html"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="donation.html"><i class="fa fa-angle-double-right"></i>Donation</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick Contacts</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="home.html#contact"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+						<li><a href="student.html#subscribe"><i class="fa fa-angle-double-right"></i>Free subscribe</a></li>
+						<li><a href="Parent.html#review"><i class="fa fa-angle-double-right"></i>Review</a></li>
+						<li><a href="Parent.html#join"><i class="fa fa-angle-double-right"></i>Join Us</a></li>
+						<li><a href="About.html#email" title="Design and developed by Suyash"><i class="fa fa-angle-double-right"></i>Connect</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="https://www.facebook.com/suyash.dude"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="https://twitter.com/_suyash_05"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.instagram.com/_suyash_05_/?hl=en"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.chaudharysuyashsri.com/"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				<hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white" id="copy">
+					<p><u><a href="https://techfest.org/">National Educational Corporation</a></u> is a Registered of Government, Inc. India a wholly owned subsidiary India Delhi</p>
+                                        <p class="h6">© All right Reversed.</p>
+				</div>
+				<hr>
+			</div>	
+		</div>
+	</section>
+    
+    
+</body>
+</html>

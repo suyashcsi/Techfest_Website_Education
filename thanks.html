@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Thanks</title>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    
+  <style>
+  /*thank*/
+html {
+    height: 100%;
+   
+}
+
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    background: transparent
+}
+
+.trigger {
+    background-color: black;
+    color: red
+}
+
+.modal,
+.fade,
+.show {
+    background-color: lightgray
+}
+
+.modal-content {
+    background: transparent;
+    border: none;
+    padding: 0 19px
+}
+
+.modal-header {
+    border: none
+}
+
+.close {
+    position: absolute !important;
+    right: 0;
+    z-index: 1;
+    border: 7px solid lightgray !important;
+    width: 5px;
+    height: 5px;
+    border-radius: 10rem;
+    background-color: #ECEFF1 !important;
+    opacity: 1;
+    top: 35px;
+    right: 25px
+}
+
+.close>span {
+    position: relative;
+    right: 10px;
+    padding: 0px;
+    bottom: 17px;
+    font-size: 29px;
+    background-color: transparent
+}
+
+.modal-body {
+    border: none;
+    background-color: #ECEFF1;
+    border-radius: 8px;
+    padding-bottom: 50px
+}
+
+.modal-footer {
+    border: none
+}
+
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: none !important
+}
+
+.close.focus,
+.close:focus {
+    outline: 0;
+    box-shadow: none !important
+}
+
+.fas {
+    color: #faac03;
+    margin-bottom: 20px
+}
+
+.col-4 {
+    padding: 0 15px;
+    color: grey
+}
+
+.mini-container:hover {
+    box-shadow: 0 8px 7px lightgrey;
+    color: black
+}
+
+
+/*background color*/
+  body {
+  background-color:#6c757d ;
+}    
+  /*content text*/
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+h6 { 
+	font: bold 300% Consolas, Monaco, monospace;
+	border-right: .1em solid black;
+	width: 16.5em; 
+	width: 40ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: typing 2s steps(21, end),
+	           blink-caret .5s step-end infinite alternate;
+        font-size: 40px;
+    line-height: 38px;
+}    
+  </style>
+</head>
+  
+<body>
+    
+     <div class="content">
+        <center> <h6><strong>Your Valuable feedback Will Improve Us !</strong></h6> </center> 
+</div>
+      
+    
+  <div class='container'> <button type="button" class="btn trigger" data-toggle="modal" data-target="#exampleModal"> FEEDBACK </button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-none"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button> </div>
+                <div class="modal-body">
+                    <p class="text-center mt-3 mb-5"><small><strong>How satisfied are you with our customer<br /> support Performance ?</strong></small></p>
+                    <div class="row">
+                        <div class="col-4 text-center">
+                            <div class="mini-container"> <a class="fas fa-smile-beam fa-3x" href="home.html"></a>
+                                <p class="text-center"><small><strong>Satisfied</strong></small></p>
+                            </div>
+                        </div>
+                        <div class="col-4 text-center">
+                            <div class="mini-container"> <a class="fas fa-meh fa-3x" href="home.html" ></a>
+                                <p class="text-center"><small><strong>neutral</strong></small></p>
+                            </div>
+                        </div>
+                        <div class="col-4 text-center">
+                            <div class="mini-container"> <a class="fas fa-tired fa-3x" href="home.html"></a>
+                                <p class="text-center"><small><strong>unhappy</strong></small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+      
+    
+</body>
+</html>
